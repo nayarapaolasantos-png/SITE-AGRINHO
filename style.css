@@ -1,1 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f8f4;
+}
 
+header {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 60vh;
+  background: url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf') no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #66bb6a;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.conteudo {
+  padding: 20px;
+}
+
+#busca input {
+  padding: 10px;
+  width: 70%;
+  max-width: 300px;
+}
+
+#busca button {
+  padding: 10px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+}
+
+#resultado {
+  margin-top: 15px;
+  background: #e8f5e9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+}
+
+button {
+  background: #1b5e20;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+footer {
+  background: #0d3b14;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .hero {
+    height: 40vh;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
