@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Forte - Futuro Sustentável</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <h1>🌱 Agro Forte</h1>
+  <p>Futuro Sustentável</p>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#busca">Buscar</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <h2>Equilíbrio entre produção e meio ambiente</h2>
+  <p>Valorizando a agricultura familiar e o desenvolvimento sustentável</p>
+  <button onclick="scrollToSection('busca')">Explorar</button>
+</section>
+
+<section id="sobre" class="conteudo">
+  <h2>Sobre a Agricultura Familiar</h2>
+  <p>
+    A agricultura familiar é responsável por grande parte dos alimentos consumidos no Brasil,
+    sendo fundamental para a sustentabilidade e economia rural.
+  </p>
+</section>
+
+<section id="busca" class="conteudo">
+  <h2>Buscar Informações</h2>
+  <input type="text" id="searchInput" placeholder="Digite: solo, água, sustentabilidade...">
+  <button onclick="buscar()">Pesquisar</button>
+
+  <div id="resultado"></div>
+</section>
+
+<section class="imagem">
+  <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Agricultura sustentável">
+</section>
+
+<section id="contato" class="conteudo">
+  <h2>Contato</h2>
+  <form onsubmit="enviarFormulario(event)">
+    <input type="text" placeholder="Nome" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Agro Forte | Sustentabilidade no campo</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
